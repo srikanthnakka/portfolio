@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* THEME VARIABLES */
+/* ============================= */
+
+:root{
+  --background:#0a0a0a;
+  --foreground:#ededed;
+}
+
+/* ============================= */
+/* BASE STYLES */
+/* ============================= */
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--background);
+  color:var(--foreground);
+  font-family:Arial, Helvetica, sans-serif;
+  overflow-x:hidden;
+}
+
+/* ============================= */
+/* GLOBAL CONTAINERS */
+/* ============================= */
+
+section{
+  width:100%;
+}
+
+/* prevent layout overflow */
+
+*{
+  box-sizing:border-box;
+}
+
+/* ============================= */
+/* IMAGE RESPONSIVE */
+/* ============================= */
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+button{
+  cursor:pointer;
+}
+
+/* ============================= */
+/* PROJECT NAVIGATION */
+/* ============================= */
+
+.project-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #1f2937;
+  padding-bottom:20px;
+  margin-bottom:40px;
+}
+
+.back-btn{
+  color:#60a5fa;
+  font-weight:500;
+  text-decoration:none;
+}
+
+.back-btn:hover{
+  text-decoration:underline;
+}
+
+.close-btn{
+  font-size:26px;
+  color:#9ca3af;
+  text-decoration:none;
+}
+
+.close-btn:hover{
+  color:white;
+}
+
+/* ============================= */
+/* README PAGE */
+/* ============================= */
+
+.readme-container{
+  max-width:1000px;
+  margin:auto;
+  padding:80px 20px;
+  line-height:1.7;
+}
+
+.readme-container h1{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.readme-container h2{
+  font-size:30px;
+  margin-top:60px;
+  margin-bottom:15px;
+  border-left:4px solid #6366f1;
+  padding-left:12px;
+}
+
+.readme-container p{
+  margin-top:10px;
+}
+
+.readme-container ul{
+  margin-top:10px;
+  padding-left:20px;
+}
+
+.readme-container li{
+  margin-bottom:6px;
+}
+
+.readme-container table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.readme-container th{
+  background:#1f2937;
+  padding:12px;
+  text-align:left;
+  border-bottom:2px solid #374151;
+}
+
+.readme-container td{
+  padding:12px;
+  border-bottom:1px solid #374151;
+}
+
+.readme-container img{
+  margin:30px auto;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.readme-container a{
+  color:#60a5fa;
+  text-decoration:none;
+}
+
+.readme-container a:hover{
+  text-decoration:underline;
+}
+
+.readme-container pre{
+  background:#111827;
+  padding:16px;
+  border-radius:8px;
+  overflow:auto;
+  margin-top:15px;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width:1024px){
+
+  h1{
+    font-size:36px;
+  }
+
+  h2{
+    font-size:28px;
+  }
+
+  .readme-container{
+    padding:60px 20px;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width:768px){
+
+  .readme-container{
+    padding:40px 15px;
+  }
+
+  .readme-container h1{
+    font-size:32px;
+  }
+
+  .readme-container h2{
+    font-size:24px;
+  }
+
+}
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width:480px){
+
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  p{
+    font-size:14px;
+  }
+
+  .readme-container{
+    padding:30px 12px;
+  }
+
+}
