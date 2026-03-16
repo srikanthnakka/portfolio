@@ -330,22 +330,3 @@ font-size:24px;
 /* SMALL MOBILE */
 /* ================================= */
 
-@media (max-width:480px){
-
-h1{
-font-size:28px;
-}
-
-h2{
-font-size:22px;
-}
-
-p{
-font-size:14px;
-}
-
-.readme-container{
-padding:30px 12px;
-}
-
-}
