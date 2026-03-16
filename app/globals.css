@@ -194,3 +194,158 @@ border-radius:8px;
 overflow:auto;
 margin-top:15px;
 }
+
+/* ================================= */
+/* GLOBAL RESPONSIVE FIXES */
+/* ================================= */
+
+/* Prevent horizontal scrolling */
+
+html, body {
+overflow-x: hidden;
+}
+
+/* Make all images responsive */
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+/* Containers */
+
+.container,
+section,
+.readme-container{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding-left:20px;
+padding-right:20px;
+}
+
+/* Flex layouts wrap automatically */
+
+.flex{
+flex-wrap:wrap;
+}
+
+/* Grid layouts responsive */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* Project cards */
+
+.project-card{
+width:100%;
+}
+
+/* Buttons */
+
+button{
+width:auto;
+max-width:100%;
+}
+
+/* ================================= */
+/* TABLET RESPONSIVE */
+/* ================================= */
+
+@media (max-width:1024px){
+
+h1{
+font-size:36px;
+}
+
+h2{
+font-size:28px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.readme-container{
+padding:60px 20px;
+}
+
+}
+
+/* ================================= */
+/* MOBILE RESPONSIVE */
+/* ================================= */
+
+@media (max-width:768px){
+
+/* Navbar */
+
+nav{
+padding:15px 20px;
+}
+
+/* Stack layouts */
+
+.flex-row{
+flex-direction:column;
+}
+
+/* Hero section */
+
+.hero{
+text-align:center;
+}
+
+.hero img{
+margin:auto;
+}
+
+/* Project cards */
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+/* Readme page */
+
+.readme-container{
+padding:40px 15px;
+}
+
+.readme-container h1{
+font-size:32px;
+}
+
+.readme-container h2{
+font-size:24px;
+}
+
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width:480px){
+
+h1{
+font-size:28px;
+}
+
+h2{
+font-size:22px;
+}
+
+p{
+font-size:14px;
+}
+
+.readme-container{
+padding:30px 12px;
+}
+
+}

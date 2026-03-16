@@ -88,7 +88,7 @@ Hyderabad, Telangana, India
 <div className="flex gap-6">
 
 <a
-href="https://github.com/srikanthnakka283"
+href="https://github.com/srikanthnakka"
 target="_blank"
 className="hover:text-cyan-400"
 >
@@ -96,7 +96,7 @@ className="hover:text-cyan-400"
 </a>
 
 <a
-href="https://linkedin.com/in/srikanth-nakka"
+href="https://linkedin.com/in/srikanthnakka283"
 target="_blank"
 className="hover:text-cyan-400"
 >
